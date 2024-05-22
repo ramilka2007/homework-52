@@ -11,6 +11,7 @@
 ********************************************************************/
 .cardsBlock {
   display: flex;
+  justify-content: center;
 }
 
 .playingCards .card {
