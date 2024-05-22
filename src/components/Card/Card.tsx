@@ -9,7 +9,7 @@ const Card: React.FC<CardProps> = ({rank, suit}) => {
     let showSuit = '';
     if (suit === 'diams') {
         showSuit = '♦️';
-    } else if (suit === 'heats') {
+    } else if (suit === 'hearts') {
         showSuit = '♥️';
     } else if (suit === 'clubs') {
         showSuit = '♣️';
@@ -25,7 +25,7 @@ const Card: React.FC<CardProps> = ({rank, suit}) => {
         rank === '6' || rank === '7' ||
         rank === '8' || rank === '9' ||
         rank === '10' || rank === 'j' ||
-        rank === 'q' || rank === 'k') {
+        rank === 'q' || rank === 'k' || rank === 'a') {
         nominal = rank;
     } else {
         console.log('Нет такого номинала.')

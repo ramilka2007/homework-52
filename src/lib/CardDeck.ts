@@ -10,6 +10,12 @@ class CardDeck {
         this.ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'j', 'q', 'k', 'a'];
         this.suits = ['diams', 'hearts', 'clubs', 'spades'];
 
+        this.generateCards();
+    };
+
+    generateCards() {
+        this.cards = [];
+
         this.ranks.map(rank => {
             this.suits.map(suit => {
                 const card = new Card(rank, suit);

@@ -9,6 +9,9 @@
 
 /* card itself
 ********************************************************************/
+.cardsBlock {
+  display: flex;
+}
 
 .playingCards .card {
   display: inline-block;
